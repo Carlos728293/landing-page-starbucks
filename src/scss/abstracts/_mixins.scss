@@ -1,0 +1,26 @@
+@mixin flex($justify: center, $align: center, $direction: row, $wrap: nowrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin cta-starbucks($font: 1.1rem) {
+    background: #00704A;
+    color: #ffffff;
+    font-size: $font;
+    text-align: center;
+
+    &:hover {
+        background-color: darken(#00704A, 7%);
+    }
+}
+/*004C34
+00704A*/
+
+@mixin lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}

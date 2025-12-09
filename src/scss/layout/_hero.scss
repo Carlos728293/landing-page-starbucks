@@ -1,0 +1,116 @@
+/* SECTION HERO */
+#hero {
+    padding: 10rem 1rem 0 1rem;
+    height: 100dvh;
+
+    @include flex(center, center, column);
+    text-align: center;
+}
+
+/* Imagem */
+.hero__imagem {
+    width: 90%;
+}
+
+/* Conteudo */
+.hero__content {
+    .hero__title {
+        color: #222222;
+
+        margin-top: 2rem;
+
+        font-size: 1.8rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+
+        span {
+            color: #3a654e;
+        }
+    }
+
+    .hero__desc {
+        color: #222222;
+        padding: .5rem 0 1rem 0;
+    }
+
+    /* CTA´s da Hero */
+    .hero__cta {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+       
+        .hero__cta-btn {
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: .3s ease;
+            text-transform: uppercase
+        }
+       
+        &-btn--primary {
+            @include cta-starbucks();
+        }
+       
+        &-btn--secondary {
+            background: transparent;
+            color: #00704A;
+            border: 2px solid #00704A;
+       
+            &:hover {
+                background: #00704A;
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* DESKTOP */
+@include lg {
+    /* SECTION HERO */
+    #hero {
+        @include flex(space-between, center, row-reverse);
+
+        padding: 0 3.5rem 0 2.5rem;
+
+        text-align: start;
+    }
+
+    /* Imagem */
+    .hero__imagem {
+        width: 60%;
+        max-width: 700px;
+    }
+
+    /* Conteudo */
+    .hero__content {
+        background: #eee4dbac;
+        backdrop-filter: blur(8px);
+
+        padding: 0 0 1rem 1rem;
+
+        border-radius: 1rem;
+
+        .hero__title {
+            text-shadow: 0px 0px 3px #ffffff;
+            
+            margin-top: 0rem;
+            max-width: 700px;
+    
+            font-size: 3rem;
+        }
+
+        .hero__desc {
+            width: 75%;
+
+            font-size: 1.5rem;
+        }
+
+        /* CTA´s da Hero */
+        .hero__cta {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+}

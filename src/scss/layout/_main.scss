@@ -1,0 +1,13 @@
+.main{
+    background-image: url("../assets/images/background/background-mobile.png");
+    background-size: cover;
+}
+
+@include lg {
+    .main{
+        background: url("../assets/images/background/background-desktop.png");
+        background-size: cover;
+
+        padding-top: 100px;
+    }
+}
