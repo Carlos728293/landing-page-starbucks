@@ -5,10 +5,12 @@ Este é um projeto de **landing page inspirada na identidade visual da Starbucks
 O projeto foi criado seguindo a metodologia **Mobile First**, possui um menu responsivo no mobile, botões CTA personalizados, imagens decorativas e uma hero section com forte apelo visual.
 
 ---
+
 ## 🔗 Acesse o site
 
 👉 **Link do projeto:** 
 https://landing-page-starbucks-topaz.vercel.app/
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
